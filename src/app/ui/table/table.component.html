@@ -1,0 +1,15 @@
+<button class="btn btn-primary col-md-2 mt-5" (click)="switchView()">Switch view</button>
+
+<table class="table mt-5 mb-5">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Fact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let card of cards">
+      <td>{{card.header}}</td>
+      <td>{{card.body}}</td>
+    </tr>
+  </tbody>

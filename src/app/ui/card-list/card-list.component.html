@@ -1,0 +1,36 @@
+<div class="row"> 
+  <div class="col-md-4 offset-md-4 mt-5 input-group">
+      <app-input (valueChanged)="onValueChanged($event)"></app-input>
+    <div class="input-group-append">
+        <button class="btn btn-primary" (click)="switchView()" id="button-addon2">Switch view</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 offset-md-4 mt-3 mb-3 text-center">
+    <h3>A moment of history</h3>
+    <div *ngIf="counter > 0">
+      <div *ngIf="counter == 1">
+          <h4>You entered {{counter}} date ..</h4>
+      </div>
+      <div *ngIf="counter > 1">
+          <h4>You entered {{counter}} dates ..</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    
+    <!-- Cards -->
+
+    <app-card *ngFor="let card of cards" 
+      [card]="card"
+      ></app-card>
+    <!-- Cards -->
+  </div>
+</div>
