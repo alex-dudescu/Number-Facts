@@ -29,8 +29,8 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     CommonModule,
-    HttpModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   declarations: [LayoutComponent, CardComponent, InputComponent, TableComponent, CardListComponent],
   exports: [LayoutComponent],

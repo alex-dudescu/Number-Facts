@@ -1,0 +1,31 @@
+#trapezoid {
+    border-bottom: 100px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100px;
+}
+
+#black-rectangle
+{
+    color:white;
+    background: black;
+    margin-top: -6em !important;
+    padding: 1.5em;
+}
+
+#blue-trapezoid
+{
+    -webkit-clip-path:polygon(0 0, 100% 0%, 100% 65%, 0% 100%);
+    width:500px;
+    height:200px;
+    background:#00add4;
+    align-content: center;
+    padding-top: 75px;
+}
+
+.all-caps
+{
+    text-transform: uppercase;
+    font-weight: 300;
+}

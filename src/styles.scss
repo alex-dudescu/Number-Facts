@@ -4,6 +4,17 @@
 body
 {
     background-image: linear-gradient(red, black);
+    
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.body-overlay
+{
+    -webkit-clip-path:polygon(0 0, 100% 0%, 100% 30%, 0% 10%);
+    width:100vw;
+    height:100vh;
+    background-color: #002255;
+    z-index: -1;
+    position: fixed;
 }
